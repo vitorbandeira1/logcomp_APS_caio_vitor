@@ -1,0 +1,50 @@
+// Declaração de variáveis
+var profundidade int
+var velocidade int
+var energia int
+
+var mensagem string
+var status_energia string
+
+mensagem = "Estado atual da operação: "
+status_energia = "Nível de energia restante: "
+
+// Inicialização
+profundidade = 50
+velocidade = 20
+energia = 100
+
+// Ativação do propulsor para iniciar o movimento
+ativar_propulsor(15)
+submergir
+
+// Ajuste de inclinação antes da navegação
+ajustar_inclinacao
+
+// Loop para simular variação da profundidade
+for profundidade = 100; profundidade > 50; profundidade = profundidade - 10 {
+	Println(profundidade)
+	energia = energia - 5
+}
+
+// Condicional para verificar energia restante
+if energia < 50 {
+	status_energia = "Alerta: nível crítico"
+} else {
+	status_energia = "Energia suficiente"
+}
+
+// Ajuste final de posição
+ajustar_posicao(25, 45)
+emergir
+
+// Ajuste final de posição
+ajustar_posicao(25, 45)
+emergir
+
+// Saída final
+Println(mensagem)
+Println(status_energia)
+Println("Profundidade final: " . profundidade)
+Println("Velocidade final: " . velocidade)
+Println("Nível de energia final: " . energia)

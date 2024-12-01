@@ -1,0 +1,41 @@
+// Declaração de variáveis
+var profundidade int
+var x int
+var y int
+var mensagem string
+
+// Inicialização de variáveis
+profundidade = 10
+x = 5
+y = 3
+
+// Operações de controle submarino
+ativar-propulsor(50)
+submergir
+
+// Loop para ajustar profundidade
+for profundidade = 10; profundidade <= 100; profundidade = profundidade + 10 {
+    Print(profundidade)
+}
+
+// Ajuste de inclinação e nova profundidade
+ajustar-inclinação
+profundidade = 80
+
+// Condicional para ajustar posição
+if x == 5 && y == 3 {
+    x = 15
+    y = 10
+}
+
+// Ajuste da posição
+ajustar-posicao(x, y)
+
+// Emergir à superfície
+emergir
+
+// Impressão dos resultados finais
+mensagem = "Operação concluída com sucesso!"
+Print(mensagem)
+Print("Profundidade final: ", profundidade)
+Print("Coordenadas finais: ", x, y)
