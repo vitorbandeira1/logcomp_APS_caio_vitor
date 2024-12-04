@@ -10,7 +10,9 @@ class SymbolTable:
         self.symbols[name] = (value, tipo)
 
     def get_symbol(self, name):
-        return self.symbols.get(name)
+        if name not in self.symbols:
+            raise NameError(f"Variável '{name}' não declarada")
+        return self.symbols[name]
 
 # Classe abstrata Node
 class Node(ABC):
@@ -128,11 +130,11 @@ class Se(Node):
 
 # Laço de repetição
 class Enquanto(Node):
-    def evaluate(self, SymbolTable):
-        self.children[0].evaluate(SymbolTable)
-        while self.children[1].evaluate(SymbolTable)[0]:
-            self.children[3].evaluate(SymbolTable)
-            self.children[2].evaluate(SymbolTable)
+    def evaluate(self, symbol_table):
+        self.children[0].evaluate(symbol_table)
+        while self.children[1].evaluate(symbol_table)[0]:
+            self.children[3].evaluate(symbol_table)
+            self.children[2].evaluate(symbol_table)
 
 # Comando de escaneamento
 class Escanear(Node):
@@ -142,7 +144,7 @@ class Escanear(Node):
 # Comandos de controle do submarino
 class Emergir(Node):
     def evaluate(self, symbol_table):
-        print("O submarino está emergindo para a superficie")
+        print("O submarino está emergindo para a superfície")
 
 class Submergir(Node):
     def evaluate(self, symbol_table):
@@ -150,7 +152,7 @@ class Submergir(Node):
 
 class AjustarInc(Node):
     def evaluate(self, symbol_table):
-        print("O submarino está ajustando a inclinacao")
+        print("O submarino está ajustando a inclinação")
 
 class AjustarPos(Node):
     def evaluate(self, symbol_table):

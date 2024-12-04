@@ -1,40 +1,43 @@
-var ang int
-var x int
-var y int
+// Declaração de variáveis
+var profundidade int;
+var x int;
+var y int;
+var mensagem string;
 
-var a string
-var b string
-var c string
+// Inicialização de variáveis
+profundidade = 10;
+x = 5;
+y = 3;
 
-a = "A inclinação final foi: "
-b = "A coordenada x final foi: "
-c = "A coordenada y final foi: "
+// Operações de controle submarino
+ativar_propulsor(50);
+submergir;
 
-x = 6
-y = 3
-
-ativar_propulsor(30)
-submergir
-
-for ang = 90; ang < 100; ang = ang + 1 {
-	Println(ang)
+// Loop para ajustar profundidade
+for profundidade = 10; profundidade < 100; profundidade = profundidade + 10 {
+    Println(profundidade);
 }
 
-ajustar_inclinacao
-ang = 90
+// Ajuste de inclinação e nova profundidade
+ajustar_inclinacao;
+profundidade = 80;
 
-if x == 6 || y == 3 {
-	x = 10
-	y = 20
+// Condicional para ajustar posição
+if x == 5 {
+    if y == 3 {
+        x = 15;
+        y = 10;
+    }
 }
 
-ajustar_posicao(x, y)
-emergir
+// Ajuste da posição
+ajustar_posição(x, y);
 
-// Saída final
-Println(a)
-Println(ang)
-Println(b)
-Println(x)
-Println(c)
-Println(y)
+// Emergir à superfície
+emergir;
+
+// Impressão dos resultados finais
+mensagem = "Operação concluída com sucesso!";
+Println(mensagem);
+Println("Profundidade final: ", profundidade);
+Println("Coordenadas finais: ", x, y);
