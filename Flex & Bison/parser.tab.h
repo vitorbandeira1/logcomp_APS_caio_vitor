@@ -62,30 +62,31 @@ extern int yydebug;
     AJUSTAR_POSICAO = 263,         /* AJUSTAR_POSICAO  */
     VAR = 264,                     /* VAR  */
     PRINTLN = 265,                 /* PRINTLN  */
-    IF = 266,                      /* IF  */
-    ELSE = 267,                    /* ELSE  */
-    AND = 268,                     /* AND  */
-    LOOP = 269,                    /* LOOP  */
-    STRING_LITERAL = 270,          /* STRING_LITERAL  */
-    SEMICOLON = 271,               /* SEMICOLON  */
-    LESS_THAN = 272,               /* LESS_THAN  */
-    GREATER_THAN = 273,            /* GREATER_THAN  */
-    DB_EQUAL = 274,                /* DB_EQUAL  */
-    EQUAL = 275,                   /* EQUAL  */
-    PLUS = 276,                    /* PLUS  */
-    MINUS = 277,                   /* MINUS  */
-    MULTIPLY = 278,                /* MULTIPLY  */
-    DIVIDE = 279,                  /* DIVIDE  */
-    STRING = 280,                  /* STRING  */
-    LPAREN = 281,                  /* LPAREN  */
-    RPAREN = 282,                  /* RPAREN  */
-    COMMA = 283,                   /* COMMA  */
-    LBRACE = 284,                  /* LBRACE  */
-    RBRACE = 285,                  /* RBRACE  */
-    NEWLINE = 286,                 /* NEWLINE  */
-    INT = 287,                     /* INT  */
-    IDEN = 288,                    /* IDEN  */
-    TIME = 289                     /* TIME  */
+    DB_EQUAL = 266,                /* DB_EQUAL  */
+    OR = 267,                      /* OR  */
+    IF = 268,                      /* IF  */
+    ELSE = 269,                    /* ELSE  */
+    AND = 270,                     /* AND  */
+    LOOP = 271,                    /* LOOP  */
+    STRING_LITERAL = 272,          /* STRING_LITERAL  */
+    SEMICOLON = 273,               /* SEMICOLON  */
+    LESS_THAN = 274,               /* LESS_THAN  */
+    GREATER_THAN = 275,            /* GREATER_THAN  */
+    EQUAL = 276,                   /* EQUAL  */
+    PLUS = 277,                    /* PLUS  */
+    MINUS = 278,                   /* MINUS  */
+    MULTIPLY = 279,                /* MULTIPLY  */
+    DIVIDE = 280,                  /* DIVIDE  */
+    STRING = 281,                  /* STRING  */
+    LPAREN = 282,                  /* LPAREN  */
+    RPAREN = 283,                  /* RPAREN  */
+    COMMA = 284,                   /* COMMA  */
+    LBRACE = 285,                  /* LBRACE  */
+    RBRACE = 286,                  /* RBRACE  */
+    NEWLINE = 287,                 /* NEWLINE  */
+    INT = 288,                     /* INT  */
+    IDEN = 289,                    /* IDEN  */
+    TIME = 290                     /* TIME  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -99,7 +100,7 @@ union YYSTYPE
         int intValue;
         char* strValue;
 
-#line 103 "parser.tab.h"
+#line 104 "parser.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

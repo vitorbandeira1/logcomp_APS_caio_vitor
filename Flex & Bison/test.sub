@@ -10,16 +10,16 @@ x = 5
 y = 3
 
 // Operações de controle submarino
-ativar-propulsor(50)
+ativar_propulsor(50)
 submergir
 
 // Loop para ajustar profundidade
 for profundidade = 10; profundidade < 100; profundidade = profundidade + 10 {
-    Print(profundidade)
+    Println(profundidade)
 }
 
 // Ajuste de inclinação e nova profundidade
-ajustar-inclinação
+ajustar_inclinacao
     profundidade = 80
 
 // Condicional para ajustar posição
@@ -31,13 +31,13 @@ if x == 5 {
 }
 
 // Ajuste da posição
-ajustar-posição(x, y)
+ajustar_posição(x, y)
 
 // Emergir à superfície
 emergir
 
 // Impressão dos resultados finais
 mensagem = "Operação concluída com sucesso!"
-Print(mensagem)
-Print("Profundidade final: ", profundidade)
-Print("Coordenadas finais: ", x, y)
+Println(mensagem)
+Println("Profundidade final: ", profundidade)
+Println("Coordenadas finais: ", x, y)
