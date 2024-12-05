@@ -37,56 +37,46 @@ SYMBOL = ( ! | ... | ?) ;
 ## Exemplo
 
 ```
-// Declaração de variáveis
-var profundidade int
-var velocidade int
-var energia int
+var ang int
+var x int
+var y int
 
-var mensagem string
-var status_energia string
+var a string
+var b string
+var c string
 
-mensagem = "Estado atual da operação: "
-status_energia = "Nível de energia restante: "
+a = "A inclinação final foi: "
+b = "A coordenada x final foi: "
+c = "A coordenada y final foi: "
 
-// Inicialização
-profundidade = 50
-velocidade = 20
-energia = 100
+x = 6
+y = 3
 
-// Ativação do propulsor para iniciar o movimento
-ativar_propulsor(15)
+ativar_propulsor(30)
 submergir
 
-// Ajuste de inclinação antes da navegação
+for ang = 90; ang < 100; ang = ang + 1 {
+	Println(ang)
+}
+
 ajustar_inclinacao
+ang = 90
 
-// Loop para simular variação da profundidade
-for profundidade = 100; profundidade > 50; profundidade = profundidade - 10 {
-	Println(profundidade)
-	energia = energia - 5
+if x == 6 || y == 3 {
+	x = 10
+	y = 20
 }
 
-// Condicional para verificar energia restante
-if energia < 50 {
-	status_energia = "Alerta: nível crítico"
-} else {
-	status_energia = "Energia suficiente"
-}
-
-// Ajuste final de posição
-ajustar_posicao(25, 45)
-emergir
-
-// Ajuste final de posição
-ajustar_posicao(25, 45)
+ajustar_posicao(x, y)
 emergir
 
 // Saída final
-Println(mensagem)
-Println(status_energia)
-Println("Profundidade final: " . profundidade)
-Println("Velocidade final: " . velocidade)
-Println("Nível de energia final: " . energia)
+Println(a)
+Println(ang)
+Println(b)
+Println(x)
+Println(c)
+Println(y)
 
 ```
 
@@ -115,20 +105,25 @@ Este código apresenta uma simulação do controle de um submarino utilizando a 
 
 ## Exemplo de Saída
 ```
-Propulsor principal ativado por 15 segundos para impulsionar o deslocamento
+Propulsor ativado durante 30 segundos para efetuar o deslocamento
 O submarino está submergindo para maior profundidade
-O submarino está ajustando a inclinação para estabilização
-100
 90
-80
-70
-60
-50
-O submarino está reposicionando-se para a coordenada (25, 45)
-O submarino está emergindo para a superfície
-Estado atual da operação:
-Energia suficiente
-Profundidade final: 50
-Velocidade final: 20
-Nível de energia final: 75
+91
+92
+93
+94
+95
+96
+97
+98
+99
+O submarino está ajustando a inclinacao
+O submarino está reposicionando-se para a coordenada (10, 20)
+O submarino está emergindo para a superficie
+A inclinação final foi:
+90
+A coordenada x final foi:
+10
+A coordenada y final foi:
+20
 ```
