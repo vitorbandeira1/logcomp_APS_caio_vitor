@@ -84,7 +84,7 @@ Println(y)
 
 Este código apresenta uma simulação do controle de um submarino utilizando a linguagem desenvolvida para operações subaquáticas. Ele demonstra a execução de comandos básicos, como movimentação, ajustes de posição e inclinação, além de verificar condições e gerenciar variáveis que representam parâmetros importantes da navegação. O objetivo é ilustrar o funcionamento de estruturas da linguagem, como loops, condicionais e comandos específicos do submarino.
 
-## Funcionalidades Demonstradas
+## Funcionalidades Existentes
 
 - **Declaração de Variáveis:**
   - Inicialização de variáveis inteiras (`int`) e strings (`string`) para controle dos parâmetros do submarino, como profundidade, velocidade, e nível de energia.
