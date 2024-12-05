@@ -45,6 +45,9 @@ emergir
 // Saída final
 Println(mensagem)
 Println(status_energia)
-Println("Profundidade final: ", profundidade)
-Println("Velocidade final: ", velocidade)
-Println("Nível de energia final: ", energia)
+Println("Profundidade final: ")
+Println(profundidade)
+Println("Velocidade final: ")
+Println(velocidade)
+Println("Nível de energia final: ")
+Println(energia)
